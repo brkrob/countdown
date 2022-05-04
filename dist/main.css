@@ -468,21 +468,44 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-backdrop-sepia:  ;
 }
 
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
+html, body {
+  height: 100%;
+  background-image: linear-gradient(to top left, var(--tw-gradient-stops));
+  --tw-gradient-from: #f9a8d4;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(249 168 212 / 0));
+  --tw-gradient-stops: var(--tw-gradient-from), #d8b4fe, var(--tw-gradient-to, rgb(216 180 254 / 0));
+  --tw-gradient-to: #818cf8;
+  padding-bottom: 3.5rem;
 }
 
-.text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
+.card {
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+  margin-bottom: 5rem;
+  margin-top: 5rem;
+  min-height: 100%;
+  border-radius: 0.25rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(252 231 243 / var(--tw-bg-opacity));
+  --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  --tw-shadow-color: #4b5563;
+  --tw-shadow: var(--tw-shadow-colored);
 }
 
-.font-bold {
-  font-weight: 700;
-}
-
-.underline {
-  -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
+.title {
+  background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
+  --tw-gradient-from: #f472b6;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(244 114 182 / 0));
+  --tw-gradient-to: #c084fc;
+  -webkit-background-clip: text;
+          background-clip: text;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  text-align: center;
+  font-size: 3rem;
+  line-height: 1;
+  font-weight: 800;
+  color: transparent;
 }

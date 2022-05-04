@@ -1,3 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html,
+body {
+	@apply h-full pb-14
+    bg-gradient-to-tl from-pink-300 via-purple-300 to-indigo-400;
+}
+
+.card {
+	@apply bg-pink-100
+    mx-10 mb-20 mt-20 min-h-full shadow-xl shadow-gray-600 rounded;
+}
+
+.title {
+	@apply py-10
+    text-center text-5xl font-extrabold text-transparent 
+    bg-clip-text bg-gradient-to-br from-pink-400 to-purple-400;
+}
