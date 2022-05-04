@@ -13,11 +13,12 @@ body {
 
 .card {
 	@apply bg-pink-100
-    min-h-full shadow-xl shadow-gray-600 rounded;
+    min-h-full shadow-xl shadow-gray-600 
+    rounded justify-center items-center;
 }
 
 .title {
-	@apply py-10
+	@apply mx-auto block pt-12
     text-center text-5xl font-extrabold text-transparent 
-    bg-clip-text bg-gradient-to-br from-pink-400 to-purple-400;
+    bg-clip-text bg-gradient-to-br from-pink-400 via-purple-600 to-blue-400;
 }
