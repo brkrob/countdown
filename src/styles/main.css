@@ -2,15 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
-html,
+html {
+    @apply  p-0;
+}
 body {
-	@apply h-full pb-14
-    bg-gradient-to-tl from-pink-300 via-purple-300 to-indigo-400;
+	@apply h-screen p-14 m-0
+    bg-swirl;
+    /* bg-gradient-to-tl from-pink-300 via-purple-300 to-indigo-400; */
 }
 
 .card {
 	@apply bg-pink-100
-    mx-10 mb-20 mt-20 min-h-full shadow-xl shadow-gray-600 rounded;
+    min-h-full shadow-xl shadow-gray-600 rounded;
 }
 
 .title {

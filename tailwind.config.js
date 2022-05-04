@@ -5,7 +5,11 @@ module.exports = {
       center: true,
       padding: '2rem',
     },
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'swirl': "url('/public/images/bg_swirl_6000x4000_.jpg')"
+      }
+    },
   },
   plugins: [],
 }

@@ -468,21 +468,19 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-backdrop-sepia:  ;
 }
 
-html, body {
-  height: 100%;
-  background-image: linear-gradient(to top left, var(--tw-gradient-stops));
-  --tw-gradient-from: #f9a8d4;
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(249 168 212 / 0));
-  --tw-gradient-stops: var(--tw-gradient-from), #d8b4fe, var(--tw-gradient-to, rgb(216 180 254 / 0));
-  --tw-gradient-to: #818cf8;
-  padding-bottom: 3.5rem;
+html {
+  padding: 0px;
+}
+
+body {
+  margin: 0px;
+  height: 100vh;
+  background-image: url('/public/images/bg_swirl_6000x4000_.jpg');
+  padding: 3.5rem;
+  /* bg-gradient-to-tl from-pink-300 via-purple-300 to-indigo-400; */
 }
 
 .card {
-  margin-left: 2.5rem;
-  margin-right: 2.5rem;
-  margin-bottom: 5rem;
-  margin-top: 5rem;
   min-height: 100%;
   border-radius: 0.25rem;
   --tw-bg-opacity: 1;
