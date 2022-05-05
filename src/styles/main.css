@@ -6,19 +6,57 @@ html {
     @apply  p-0;
 }
 body {
-	@apply h-screen p-14 m-0
-    bg-swirl;
+	@apply h-screen m-0 bg-swirl;
     /* bg-gradient-to-tl from-pink-300 via-purple-300 to-indigo-400; */
 }
 
+.cake {
+    @apply mx-auto drop-shadow-md;
+}
+
 .card {
-	@apply bg-pink-100
-    min-h-full shadow-xl shadow-gray-600 
-    rounded justify-center items-center;
+	@apply
+    max-h-fit
+    rounded-xl justify-center items-center relative;
+}
+
+.card_side {
+    @apply absolute top-0 left-0 min-h-full min-w-full;
+    transition: all 0.8s ease;
+    backface-visibility: hidden;
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+}
+
+.card_side-front {
+    @apply bg-pink-100 shadow-xl shadow-gray-600 rounded-xl;
+}
+
+.card_side-back {
+    @apply bg-pink-100 shadow-xl shadow-gray-600 rounded-xl;
+    transform: rotateY(180deg);
+}
+
+.card:hover .card_side-front {
+    transform: rotateY(-180deg);
+}
+
+.card:hover .card_side-back {
+    transform: rotateY(0);
+}
+
+.container {
+    @apply pt-10
+}
+.name {
+	@apply mx-auto block;
 }
 
 .title {
-	@apply mx-auto block pt-12
-    text-center text-5xl font-extrabold text-transparent 
-    bg-clip-text bg-gradient-to-br from-pink-400 via-purple-600 to-blue-400;
+	@apply mx-auto block pt-12 pb-2
+}
+
+svg {
+    filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
 }

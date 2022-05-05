@@ -1,9 +1,11 @@
 <svg width="480.8" height="151.1" viewBox="0 0 485 155" xmlns="http://www.w3.org/2000/svg">
     <defs>
         <linearGradient id="gradient">
-            <stop offset="0%" stop-color="#f472b6" />
-            <stop offset="40%" stop-color="#9333ea" />
-            <stop offset="60%" stop-color="#60a5fa" />
+            <stop offset="0%" stop-color="#c1d6e7" />
+            <stop offset="25%" stop-color="#83bae1" />
+            <stop offset="55%" stop-color="#1663a7" />
+            <stop offset="75%" stop-color="#f472b6" />
+            <stop offset="98%" stop-color="#f49fb6" />
         </linearGradient>
     </defs>
     <g id="svgGroup" stroke-linecap="round" fill-rule="evenodd" font-size="12pt" stroke-width="0.5mm"
